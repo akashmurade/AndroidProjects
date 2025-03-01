@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/action_home"
+        android:icon="@drawable/home"
+        android:title="Home"> Home </item>
+
+    <item android:id="@+id/action_about"
+        android:icon="@drawable/about"
+        android:title="About"> About </item>
+
+    <item android:id="@+id/action_service"
+        android:icon="@drawable/service"
+        android:title="Service"> Service </item>
+
+    <item android:id="@+id/action_career"
+        android:icon="@drawable/career"
+        android:title="Career"> Career </item>
+
+    <item android:id="@+id/action_contact"
+        android:icon="@drawable/contact"
+        android:title="Contact"> Contact </item>
+
+</menu>

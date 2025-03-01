@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.viewmodels.MyViewModel" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/counter"
+            app:text="@{String.valueOf(viewModel.counter)}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:fontFamily="serif-monospace"
+            android:textSize="80sp" />
+
+        <Button
+            android:onClick="@{viewModel::onIncrease}"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Increase"
+
+            android:backgroundTint="#ff0000"
+            android:textSize="20sp" />
+
+        <Button
+            android:onClick="@{viewModel::onDecrease}"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Decrease"
+            android:backgroundTint="#00BCD4"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</layout>

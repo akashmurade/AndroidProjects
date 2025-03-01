@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Link">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:fontFamily="serif-monospace"
+            android:text="Implicit Intent" />
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+        <Button
+            android:id="@+id/webpage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Web Page"
+            android:fontFamily="serif-monospace"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/sharetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share text"
+            android:fontFamily="serif-monospace"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="Phone Number"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/googlemap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Google Maps Navigation"
+            android:fontFamily="serif-monospace"
+            android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
